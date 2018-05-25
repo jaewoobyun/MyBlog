@@ -5,7 +5,7 @@
 ### Printing
 ---
 
-'''
+'''swift
 
 	/*:
 	 # Hello, world!
@@ -48,7 +48,7 @@
 	 - 주석 없이도 쉽게 이해할 수 있을 만한 코드를 짜는 것이 베스트
 	 
 
-'''
+	''' swift
 	print("Hello, world!")
 	// print("Hello, world!")
 	/// print("Hello, world!")
@@ -90,7 +90,7 @@
 
 
 
-'''
+'''swift
 
 	let maximumNumberOfLoginAttempts = 10. //10
 	maximumNumberOfLoginAttempts = 20	      //error (let은 constant 선언이기 때문에)	
@@ -110,7 +110,7 @@
 --- 
 
 
-'''
+'''swift
 
 	var x = 0.0, y = 0.0, z = 0.0
 	x = 1
@@ -123,7 +123,7 @@
  ---
  영어 외에도 유니코드 문자를 포함한 대부분의 문자를 사용해 네이밍 가능
 
-'''
+'''swift
 
 	let π = 3.14159
 	let 你好 = "你好世界"
@@ -147,7 +147,7 @@
  4. 화살표 (→, ← 등)
  5. 숫자로 시작하는 이름 (시작 부분 외에는 사용 가능)
 
-'''
+'''swift
 
 	// e.g.
 	// let 한글 = "ㄱ"
@@ -165,7 +165,7 @@
 ---
 변수 선언 시 사용될 자료의 타입을 명확하게 지정하는 것
 
-'''
+'''swift
 	
 	let year: Int = 10
 	let language: String
@@ -180,7 +180,7 @@
 ---
 변수 선언 시 초기화로 사용되는 값의 타입을 통해 변수의 타입을 추론하여 적용하는 것
 
-'''
+'''swift
 	
 	let name: String = "Tori"
 	type(of: name)							//String.Type
@@ -210,7 +210,7 @@
 ### Numeric Literals
 ---
 
-'''
+'''swift
 	
 	var signedInteger = 123	
 	signedInteger = +123
@@ -239,7 +239,7 @@
 
  메모리 사이즈를 알고 싶을 떄 MemroyLayout<>를 사용
 
-'''
+'''swift
 
 	var integer = 123
 	integer = -123
@@ -301,7 +301,7 @@
  	//  
  ---
 
-''' 
+''' swift
 
 	//let q1: UInt8 = -1
 	//let q2: Int8 = Int8.max + 1
@@ -331,7 +331,7 @@
 ### Floating-point Literal
 ---
 
-'''
+'''swift
 
 	var floatingPoint = 1.23				//1.23
 	floatingPoint = 1.23e4					//12300
@@ -362,7 +362,7 @@
 
 ### Boolean Literal
 ---
-'''
+'''swift
 	
 	var isBool = true			//true
 	type(of: isBool)			//Bool.Type
@@ -377,7 +377,7 @@
 
 ### String Literal
 ---
-'''
+'''swift
 	
 	let str = "Hello, world!"			//"Hello, world!"
 	type(of: str)						//String.Type
@@ -391,7 +391,7 @@
 ###Character Literal
 ---
 
-'''
+'''swift
 	
 	var nonCharacter = "C"
 	type(of: nonCharacter)					//String.Type
@@ -411,7 +411,7 @@
 
 ### Typealias
 ----
-'''
+'''swift
 	
 	// typealias <#type name#> = <#type expression#>
 	
@@ -428,7 +428,7 @@
 
 ### Type Conversion
 ---
-'''
+'''swift
 
 	let height = Int8(5)
 	let width = 10
@@ -447,7 +447,7 @@
 ###Terminology
 ---
 
-'''
+'''swift
 
 	
 	let a = 123
@@ -480,7 +480,7 @@
 ### Assignment Operators
 ---
 
-'''
+'''swift
 	
 	// Basic assignment operator
 	var value = 0
@@ -522,7 +522,7 @@
 ### Arithmetic Operators
 ---
 
-'''
+'''swift
 
 	// Unary plus opertor
 	+a
@@ -561,7 +561,7 @@
 	
 #### Precedence
 ---
-'''
+'''swift
 		
 	1 + 2 * 3				//7
 	1 + (2 * 3)				//7
@@ -594,7 +594,7 @@
 	
 ### Comparison Operators
 ---
-'''
+'''swift
 
 	// Equal to operator
 	a == b
@@ -617,7 +617,7 @@
 
 ### Logical Operators
 ---
-'''
+'''swift
 
 	
 	// Logical AND Operator
@@ -669,7 +669,7 @@
 
 ### Ternary Conditional Operator
 ---
-'''
+'''swift
 
 	
 	a > 0 ? "positive" : "zero or negative"	// positive
@@ -683,7 +683,7 @@
 
 ### Range Operator
 ---
-'''
+'''swift
 
 	// Closed Range Operator
 	0...100
