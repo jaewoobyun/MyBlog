@@ -5,16 +5,16 @@
 ### Printing
 ---
 
-'''swift
+``` Swift
 
 	/*:
 	 # Hello, world!
 	 */
-
+```
 
 로그 출력을 위한 함수 (Free Function)
 
-'''
+```Swift
 
 	print(3.14)
 	
@@ -32,7 +32,7 @@
 	 ## Comment
 	 [Quick Help Markup](https://goo.gl/YTge3C)
 	 */
-	 
+```	 
 
 ###주석 (Comment)
 ---
@@ -48,7 +48,7 @@
 	 - 주석 없이도 쉽게 이해할 수 있을 만한 코드를 짜는 것이 베스트
 	 
 
-	''' swift
+``` Swift
 	print("Hello, world!")
 	// print("Hello, world!")
 	/// print("Hello, world!")
@@ -77,7 +77,7 @@
 	//print(1);
 	//print(2);
 	//print(3);
-	
+```
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-'''swift
+```Swift
 
 	let maximumNumberOfLoginAttempts = 10. //10
 	maximumNumberOfLoginAttempts = 20	      //error (let은 constant 선언이기 때문에)	
@@ -99,7 +99,7 @@
 	currentLoginAttempt = 1                //1
 	
 
-
+```
  1. 네이밍 확인 (의미, 방식, 길이 등)
  2. 네이밍 컨벤션
  3. 선언 순서
@@ -110,20 +110,20 @@
 --- 
 
 
-'''swift
+```Swift
 
 	var x = 0.0, y = 0.0, z = 0.0
 	x = 1
 	y = 2
 	z = 3
-
+```
 
 
 ### Naming
  ---
  영어 외에도 유니코드 문자를 포함한 대부분의 문자를 사용해 네이밍 가능
 
-'''swift
+```Swift
 
 	let π = 3.14159
 	let 你好 = "你好世界"
@@ -137,7 +137,7 @@
 	print(🐶🐮)
 	print(`let`)
 
-
+```
 
  변수로 사용할 수 없는 이름
  
@@ -147,7 +147,7 @@
  4. 화살표 (→, ← 등)
  5. 숫자로 시작하는 이름 (시작 부분 외에는 사용 가능)
 
-'''swift
+```Swift
 
 	// e.g.
 	// let 한글 = "ㄱ"
@@ -156,7 +156,7 @@
 	// let → = "arrow"
 	// let 369게임 = "12짝45짝..."
 
-
+```
 ---
 
 ## Type Annotation & Type Inference
@@ -165,7 +165,7 @@
 ---
 변수 선언 시 사용될 자료의 타입을 명확하게 지정하는 것
 
-'''swift
+``` Swift
 	
 	let year: Int = 10
 	let language: String
@@ -174,13 +174,13 @@
 	red = 255.0
 	green = 150.123
 	blue = 75
-	
+```	
 	
 ### Type Inference
 ---
 변수 선언 시 초기화로 사용되는 값의 타입을 통해 변수의 타입을 추론하여 적용하는 것
 
-'''swift
+``` Swift
 	
 	let name: String = "Tori"
 	type(of: name)							//String.Type
@@ -194,7 +194,7 @@
 	var spelling = ["T", "O", "R", "I"]
 	type(of: spelling)						//Array<String>.Type
 	
-	
+```	
 	
 
 ## Literals & Types
@@ -210,7 +210,7 @@
 ### Numeric Literals
 ---
 
-'''swift
+```Swift
 	
 	var signedInteger = 123	
 	signedInteger = +123
@@ -227,7 +227,7 @@
 	bigNumber = 000_001_000_000_000
 	bigNumber = 0b1000_1000_0000		//2176
 	bigNumber = 0xAB_00_FF_00_FF		//734456119551
-	
+```	
 
 ### Integer Types
 ---
@@ -239,7 +239,7 @@
 
  메모리 사이즈를 알고 싶을 떄 MemroyLayout<>를 사용
 
-'''swift
+```Swift
 
 	var integer = 123
 	integer = -123
@@ -290,7 +290,7 @@
 	UInt64.max 		  // Playground Bug	//9223372036854775807
 	UInt64.min
 	print(UInt64.max)				   // 18,446,744,073,709,551,615
-
+```
 
 #### Question
  - UInt에 음수를 넣으면?	
@@ -301,7 +301,7 @@
  	//  
  ---
 
-''' swift
+```Swift
 
 	//let q1: UInt8 = -1
 	//let q2: Int8 = Int8.max + 1
@@ -325,13 +325,13 @@
 	Int8.min &- 1							//127
 	Int32.min &- 1							//2147483647
 	Int64.min &- 1							//9223372036854775807
-
+```
 
 
 ### Floating-point Literal
 ---
 
-'''swift
+```Swift
 
 	var floatingPoint = 1.23				//1.23
 	floatingPoint = 1.23e4					//12300
@@ -362,7 +362,7 @@
 
 ### Boolean Literal
 ---
-'''swift
+```Swift
 	
 	var isBool = true			//true
 	type(of: isBool)			//Bool.Type
@@ -377,7 +377,7 @@
 
 ### String Literal
 ---
-'''swift
+```Swift
 	
 	let str = "Hello, world!"			//"Hello, world!"
 	type(of: str)						//String.Type
@@ -386,12 +386,12 @@
 	type(of: str1)						//String.Type
 	
 	var language: String = "Swift"		//"Swift"
-
+```
 
 ###Character Literal
 ---
 
-'''swift
+```Swift
 	
 	var nonCharacter = "C"
 	type(of: nonCharacter)					//String.Type
@@ -407,11 +407,11 @@
 	
 	//character = ""
 	//character = "string"
-
+```
 
 ### Typealias
 ----
-'''swift
+``` Swift
 	
 	// typealias <#type name#> = <#type expression#>
 	
@@ -423,12 +423,12 @@
 	type(of: maxAmplitudeFound)			//UInt16.Type
 	type(of: maxAmplitudeFound1)		//UInt16.Type
 	
-
+```
 
 
 ### Type Conversion
 ---
-'''swift
+```Swift
 
 	let height = Int8(5)
 	let width = 10
@@ -440,14 +440,14 @@
 	let x = 10 * h			//250
 	print(x)					//"250\n"
 	
-	
+```	
 
 ##Basic Operators
 
 ###Terminology
 ---
 
-'''swift
+```Swift
 
 	
 	let a = 123
@@ -475,12 +475,12 @@
 	//  "negative"
 	//}
 
-
+```
 
 ### Assignment Operators
 ---
 
-'''swift
+```Swift
 	
 	// Basic assignment operator
 	var value = 0
@@ -518,11 +518,12 @@
 	//  // This is not valid, because x = y does not return a value.
 	//}
 
+```
 
 ### Arithmetic Operators
 ---
 
-'''swift
+``` Swift
 
 	// Unary plus opertor
 	+a
@@ -557,11 +558,11 @@
 	let quotient = (e / f).rounded()		//22
 	let remainder = e.remainder(dividingBy: f)	//-1.515999999999993
 	let sum = f * quotient + remainder	//123.4
-	
+```	
 	
 #### Precedence
 ---
-'''swift
+```Swift
 		
 	1 + 2 * 3				//7
 	1 + (2 * 3)				//7
@@ -574,11 +575,11 @@
 	1 * 2 - 3				//-1
 	(1 * 2) - 3				//-1
 	1 * (2 - 3)				//-1
-
+```
 
 ### Overflow Operators
 ---
-'''
+```Swift
 
 	// Overflow addition
 	//var add: Int8 = Int8.max + 1		
@@ -591,10 +592,11 @@
 	// Overflow multiplication
 	//var multiplication: Int8 = Int8.max * 2
 	var multiplication: Int8 = Int8.max &* 2		//-2
-	
+
+```
 ### Comparison Operators
 ---
-'''swift
+```Swift
 
 	// Equal to operator
 	a == b
@@ -613,11 +615,11 @@
 	
 	// Less than or equal to operator
 	a <= b
-
+```
 
 ### Logical Operators
 ---
-'''swift
+```Swift
 
 	
 	// Logical AND Operator
@@ -664,12 +666,13 @@
 	} else {
 	  // ...
 	}
-	
+```	
+
 
 
 ### Ternary Conditional Operator
 ---
-'''swift
+```Swift
 
 	
 	a > 0 ? "positive" : "zero or negative"	// positive
@@ -680,10 +683,11 @@
 	  "zero or negative"
 	}
 			//positive
+```
 
 ### Range Operator
 ---
-'''swift
+```Swift
 
 	// Closed Range Operator
 	0...100
@@ -723,6 +727,6 @@
 	names[...2]		//["Anna", "Alex", "Brian"]
 	names[..<2]		//["Anna", "Alex"]
 	
-	
+```	
 	
 
