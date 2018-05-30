@@ -174,8 +174,10 @@
 	red = 255.0
 	green = 150.123
 	blue = 75
-```	
-	
+
+```
+
+
 ### Type Inference
 ---
 변수 선언 시 초기화로 사용되는 값의 타입을 통해 변수의 타입을 추론하여 적용하는 것
@@ -194,7 +196,7 @@
 	var spelling = ["T", "O", "R", "I"]
 	type(of: spelling)						//Array<String>.Type
 	
-```	
+```
 	
 
 ## Literals & Types
@@ -227,7 +229,9 @@
 	bigNumber = 000_001_000_000_000
 	bigNumber = 0b1000_1000_0000		//2176
 	bigNumber = 0xAB_00_FF_00_FF		//734456119551
-```	
+```
+
+
 
 ### Integer Types
 ---
@@ -351,7 +355,7 @@
 	MemoryLayout<Double>.size				//8
 	Double.greatestFiniteMagnitude   		// DBL_MAX 1.797693134862316e+308
 	Double.leastNormalMagnitude   			// DBL_MIN 2.225073858507201e-308
-
+```
 
 - Double - 최소 소수점 이하 15 자리수 이하의 정밀도
 - Float - 최소 소수점 이하 6 자리수 이하의 정밀도
@@ -373,6 +377,7 @@
 	//isBool = 0				//Cannot assign value of type 'Int' to type 'Bool'
 	
 	let shouldChange: Bool = true		//true
+```
 
 
 ### String Literal
@@ -440,7 +445,9 @@
 	let x = 10 * h			//250
 	print(x)					//"250\n"
 	
-```	
+```
+
+
 
 ##Basic Operators
 
@@ -558,8 +565,10 @@
 	let quotient = (e / f).rounded()		//22
 	let remainder = e.remainder(dividingBy: f)	//-1.515999999999993
 	let sum = f * quotient + remainder	//123.4
-```	
-	
+```
+
+
+
 #### Precedence
 ---
 ```Swift
