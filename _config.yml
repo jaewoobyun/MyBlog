@@ -40,8 +40,8 @@ email: your-email@example.com
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
-baseurl: "/jaewoobyun.github.io" # the subpath of your site, e.g. /blog
-url: "/MyWebsiteHome" # the base hostname & protocol for your site
+baseurl: "/MyWebsiteHome" # the subpath of your site, e.g. /blog
+url: "/jaewoobyun.github.io" # the base hostname & protocol for your site
 
 # Social settings
 facebook_url: 
