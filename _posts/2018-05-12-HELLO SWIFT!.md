@@ -1,3 +1,10 @@
+---
+title: Hello Swift!
+layout: post
+---
+
+
+
 # HELLO SWIFT!
 
 ## Basics

@@ -1,8 +1,11 @@
-# Swift Basics
+---
+title: Conditional Statements
+layout: post
+---
 
-## Conditional Statements
+# Conditional Statements
 
-### if Statements
+## if Statements
 
 ``` Swift
 /***************************************************
@@ -82,7 +85,7 @@ if temperatureInFahrenheit > 0, temperatureInFahrenheit % 2 == 0 {
 
 
 
- ### switch Statements
+ ## Switch Statements
 
 
 ``` Swift
@@ -105,14 +108,14 @@ print("\n---------- [ switch statements ] ----------\n")
 let alphabet: Character = "a"
 
 switch alphabet {
-case "a":
-print("The first letter of the alphabet")
-case "z":
-print("The last letter of the alphabet")
-default:
-// Invalid, the case has an empty body
-break
-//  print("Some other character")
+    case "a":
+    print("The first letter of the alphabet")
+    case "z":
+    print("The last letter of the alphabet")
+    default:
+    // Invalid, the case has an empty body
+    break
+    //  print("Some other character")
 }
 
 
@@ -123,12 +126,12 @@ print("\n---------- [ Interval Matching ] ----------\n")
 let approximateCount = 30
 
 switch approximateCount {
-case 0...50:
-print("0 ~ 50")
-case 51...100:
-print("51 ~ 100")
-default:
-print("Something else")
+    case 0...50:
+    print("0 ~ 50")
+    case 51...100:
+    print("51 ~ 100")
+    default:
+    print("Something else")
 }
 
 
@@ -137,13 +140,13 @@ print("Something else")
 let someCharacter: Character = "e"
 
 switch someCharacter {
-case "a", "e", "i", "o", "u":
-print("\(someCharacter) is a vowel")
-case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
-    "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
-print("\(someCharacter) is a consonant")
-default:
-print("\(someCharacter) is not a vowel or a consonant")
+    case "a", "e", "i", "o", "u":
+    print("\(someCharacter) is a vowel")
+    case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
+        "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
+    print("\(someCharacter) is a consonant")
+    default:
+    print("\(someCharacter) is not a vowel or a consonant")
 }
 
 
@@ -153,10 +156,10 @@ print("\(someCharacter) is not a vowel or a consonant")
 let stillAnotherPoint = (9, 0)
 
 switch stillAnotherPoint {
-case (let distance, 0), (0, let distance):
-print("On an axis, \(distance) from the origin")
-default:
-print("Not on an axis")
+    case (let distance, 0), (0, let distance):
+    print("On an axis, \(distance) from the origin")
+    default:
+    print("Not on an axis")
 }
 
 
@@ -166,10 +169,10 @@ let isTrue = true
 type(of: isTrue)
 
 switch isTrue {
-case true:
-print("true")
-case false:
-print("false")
+    case true:
+    print("true")
+    case false:
+    print("false")
 }
 
 
@@ -180,11 +183,11 @@ let integerToDescribe = 5
 var description = "The number \(integerToDescribe) is"
 
 switch integerToDescribe {
-case 2, 3, 5, 7, 11, 13, 17, 19:
-description += " a prime number, and also"
-fallthrough
-default:
-description += " an integer."
+    case 2, 3, 5, 7, 11, 13, 17, 19:
+    description += " a prime number, and also"
+    fallthrough
+    default:
+    description += " an integer."
 }
 print(description)
 ```
