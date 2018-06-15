@@ -3,6 +3,11 @@ title: Hello Swift!
 layout: post
 ---
 
+! [Swift logo] (https://github.com/jaewoobyun/jaewoobyun.github.io/tree/master/assets/images/swiftLogo.png)
+
+![Swift logo] (../assets/images/swiftLogo.png)
+
+
 
 
 # HELLO SWIFT!
