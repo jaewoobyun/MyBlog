@@ -1,11 +1,15 @@
 ---
 title: Hello Swift!
+author: Jaewoo
 layout: post
+icon: fa-lightbulb-o
 ---
 
 ! [Swift logo] (https://github.com/jaewoobyun/jaewoobyun.github.io/tree/master/assets/images/swiftLogo.png)
 
 ![Swift logo] (../assets/images/swiftLogo.png)
+
+<span class="image left"><img src="{{ 'assets/images/swiftLogo.png' | relative_url }}" alt="" /></span>
 
 
 
